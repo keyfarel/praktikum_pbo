@@ -15,17 +15,6 @@ public class Barang {
         return (int) (hargaDasar * (1 - diskon));
     }
 
-    @Override
-    public String toString() {
-        return getClass().getSimpleName()
-                + " [kode: " + kode
-                + ", diskon: " + diskon
-                + ", nama barang: " + namaBarang
-                + ", harga dasar: " + hargaDasar
-                + ", Harga jual: " + hitungHargaJual()
-                + ']';
-    }
-
     public void tampilData() {
         String format = "%-15s: %s%n";
         System.out.printf(format, "Kode", kode);

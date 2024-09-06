@@ -5,8 +5,6 @@ public class Main {
         Barang brg1 = new Barang("23124", "Jaket",
                 200000, 0.5F);
 
-        System.out.println(brg1);
-
         brg1.tampilData();
     }
 }
