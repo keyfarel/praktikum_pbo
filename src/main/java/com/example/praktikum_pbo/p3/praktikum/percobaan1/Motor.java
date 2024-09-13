@@ -3,6 +3,7 @@ package com.example.praktikum_pbo.p3.praktikum.percobaan1;
 public class Motor {
     private int kecepatan;
     private boolean kontakOn = false;
+    private final int MAX_KECEPATAN = 100;
 
     public void nyalakanMesin(){
         kontakOn = true;
@@ -14,11 +15,15 @@ public class Motor {
     }
 
     public void tambahKecepatan (){
-        if(kontakOn){
-            kecepatan += 5;
-        }else {
-            System.out.println("Kecepatan tidak bisa bertambah karena mesin off!\n");
-        }
+        if(kontakOn) {
+            if (kecepatan + 1 > MAX_KECEPATAN) {
+                System.out.println("Kecepatan sudah maksimal!!\n");
+            } else {
+                kecepatan += 100;
+            }
+        }else{
+                System.out.println("Kecepatan tidak bisa bertambah karena mesin off!\n");
+         }
     }
 
     public void kurangiKecepatan(){
@@ -30,8 +35,7 @@ public class Motor {
     }
 
     public void printStatus() {
-        if (kontakOn == true) {
-
+        if (kontakOn) {
             System.out.println("Kontak On");
         } else {
             System.out.println("Kontak Off");
