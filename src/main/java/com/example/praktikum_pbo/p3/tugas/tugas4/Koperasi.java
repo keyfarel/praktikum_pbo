@@ -18,10 +18,11 @@ public class Koperasi {
             switch (masuk){
                 case 1 -> subMenu(sc);
                 case 0 ->{
-                    System.out.println("Keluar dari aplikasi.");
+                    System.out.println("\nKeluar dari aplikasi.");
                     System.exit(0);
                 }
-                default -> System.out.println("Pilihan tidak valid. Silakan coba lagi.");
+                default -> System.out.println("Pilihan tidak valid."
+                        + " Silakan coba lagi.");
             }
         }
     }
@@ -38,7 +39,7 @@ public class Koperasi {
                 case 2 -> pinjam(sc);
                 case 3 -> tampilData();
                 case 0 -> {
-                    System.out.println("Kembali ke menu utama.");
+                    System.out.println("\nKembali ke menu utama.");
                     return;
                 }
                 default -> System.out.println("Pilihan tidak valid."
@@ -104,9 +105,10 @@ public class Koperasi {
         System.out.println("\nData Anggota");
         System.out.printf("Nama: %s%n", anggota.getName());
         System.out.printf("No KTP: %s%n", anggota.getNoKtp());
-        System.out.printf("Limit Pinjaman: Rp %,d%n", anggota.getLimitPinjaman());
-        System.out.printf("Jumlah Pinjaman Saat Ini: Rp %,d%n", anggota.getJumlahPinjaman());
+        System.out.printf("Limit Pinjaman: Rp %,d%n",
+                anggota.getLimitPinjaman());
+        System.out.printf("Jumlah Pinjaman Saat Ini: Rp %,d%n",
+                anggota.getJumlahPinjaman());
         System.out.println();
     }
-
 }
