@@ -15,7 +15,7 @@ public class Kursi {
     }
 
     public String info() {
-        String info = "\nNomor kursi   : " + nomor;
+        var info = "\nNomor kursi   : " + nomor;
         if (penumpang != null) {
             info += ", " + penumpang.info();
         } else {

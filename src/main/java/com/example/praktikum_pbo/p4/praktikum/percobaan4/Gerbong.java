@@ -3,7 +3,6 @@ package com.example.praktikum_pbo.p4.praktikum.percobaan4;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Arrays;
 
 @Getter
 @Setter
@@ -28,7 +27,7 @@ public class Gerbong {
     }
 
     public String info() {
-        String info = "";
+        var info = "";
         info += "Kode Gerbong  : " + kode ;
         for (Kursi kursi : arrayKursi) {
 
