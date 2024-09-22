@@ -17,9 +17,13 @@ public class Gerbong {
     }
 
     public void setPenumpang(Penumpang penumpang, int nomor) {
-        this.arrayKursi[nomor - 1].setPenumpang(penumpang);
+        if (this.arrayKursi[nomor - 1].getPenumpang() != null) {
+            System.out.println("Kursi nomor " + nomor + " sudah ditempati!");
+        } else {
+            this.arrayKursi[nomor - 1].setPenumpang(penumpang);
+            System.out.println("Penumpang berhasil duduk di kursi nomor " + nomor);
+        }
     }
-
     public void initKursi() {
         for (int i = 0; i < arrayKursi.length; i++) {
             this.arrayKursi[i] = new Kursi(String.valueOf(i + 1));
