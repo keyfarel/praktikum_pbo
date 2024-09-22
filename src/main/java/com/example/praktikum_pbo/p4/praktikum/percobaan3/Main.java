@@ -10,7 +10,8 @@ public class Main {
         System.out.println();
 
         var masinis2 = new Pegawai("1234", "Spongebob Squarepants");
-        var keretaApi2 = new KeretaApi("Gaya Baru", "Bisnis", masinis2);
+        var asisten2 = new Pegawai("1234", "Squidward Tentacle");
+        var keretaApi2 = new KeretaApi("Gaya Baru", "Bisnis", masinis2, asisten2);
         System.out.println(keretaApi2);
     }
 }
