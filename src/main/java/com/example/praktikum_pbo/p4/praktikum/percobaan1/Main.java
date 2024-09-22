@@ -3,7 +3,7 @@ package com.example.praktikum_pbo.p4.praktikum.percobaan1;
 public class Main {
     public static void main(String[] args) {
         var p = new Processor("Intel i5", 3);
-        var l = new Laptop("Thinkpad", p);
+        var l = new Laptop("Thinkpad", new Processor("Intel i5", 3));
         System.out.println(l);
 
         var p1 = new Processor();
