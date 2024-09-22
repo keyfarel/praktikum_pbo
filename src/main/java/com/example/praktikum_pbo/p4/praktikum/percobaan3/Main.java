@@ -7,6 +7,6 @@ public class Main {
         var keretaApi = new KeretaApi("Gaya Baru", "Bisnis", masinis, asisten);
 
         System.out.println(keretaApi);
-
+        System.out.println();
     }
 }

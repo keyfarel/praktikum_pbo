@@ -25,7 +25,7 @@ public class KeretaApi {
                 + "nama: " + nama
                 + ", kelas: " + kelas
                 + "\nmasinis: " + masinis
-                + "\nasisten:" + asisten
+                + "\nasisten: " + asisten
                 + ']';
     }
 }
