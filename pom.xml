@@ -9,7 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <exec.mainClass>com.example.praktikum_pbo.p1.praktikum.sepeda_demo.SepedaDemo</exec.mainClass>
+        <exec.mainClass>com.example.praktikum_pbo.P_001.praktikum.sepeda_demo.SepedaDemo</exec.mainClass>
     </properties>
     <dependencies>
         <dependency>
