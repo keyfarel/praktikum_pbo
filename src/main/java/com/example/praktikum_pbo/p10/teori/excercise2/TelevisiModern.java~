@@ -1,0 +1,10 @@
+package com.example.praktikum_pbo.p10.teori.excercise2;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@Getter
+public class TelevisiModern extends Elektronik {
+    private String modeInput = "HDMI";
+}
